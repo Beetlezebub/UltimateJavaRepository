@@ -9,6 +9,7 @@ public class Main {
     System.out.print("AP CS");
     System.out.print("A Rocks");
     System.out.println("!!");
+    System.out.println("!");
   }
   
 }
