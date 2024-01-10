@@ -11,7 +11,8 @@ public class Main {
     System.out.println("!!");
     System.out.println("!");
     System.out.println("!");
-    System.out.println("this was done on replit.")
+    System.out.println("this was done on replit.");
+    System.out.println("this was done on e100 computer");
 
   }
   
