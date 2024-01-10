@@ -1,0 +1,9 @@
+.settings
+target
+.breakpoints
+.classpath
+.project
+.replit
+pom.xml
+replit.nix
+*.class
