@@ -10,6 +10,9 @@ public class Main {
     System.out.print("A Rocks");
     System.out.println("!!");
     System.out.println("!");
+    System.out.println("!");
+    System.out.println("this was done on replit.")
+
   }
   
 }
