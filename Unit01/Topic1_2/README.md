@@ -21,11 +21,12 @@ When a variable is declared final is  value can't be changed once it's initializ
 A variable is a name given to a memory location that is holding a specified type of value
 
 ## Naming a variable
-    May consist of letter, digits, or an underscore (case sensitive)
-    May not start with a digit
-    Spaces aren't allowed
-    May not use any other characters such as "&", "@", or "$"
-    May not use Java reserved word (e.g. "public", "static", "void", etc.)
+
+May consist of letter, digits, or an underscore (case sensitive)
+May not start with a digit
+Spaces aren't allowed
+May not use any other characters such as "&", "@", or "$"
+May not use Java reserved word (e.g. "public", "static", "void", etc.)
 Variable names should start with lowercase and use "camel case" if more than one word: thisIsAGoodExample
 
 ## Declaring variable in code
@@ -35,10 +36,10 @@ Three primitive data types in Java:
     Boolean valuse: boolean
 
 dataType variableName;
-EX: "int total;", "double intRate;", "boolean giveBonus;"
+EX: `int total;`, `double intRate;`, `boolean giveBonus;`
 
 "final" used for variable that can't be changed once given a value
-    Ex: "final double PI;", "final int DAYS_IN_WEEK;", "final boolean JAVA_ROCKS"
+    Ex: `final double PI;`, `final int DAYS_IN_WEEK;`, `final boolean JAVA_ROCKS`
 When naming final variables we use ALL CAPS and underscores
 
 1, 6, 7, 8, 10, and 12 are valid
