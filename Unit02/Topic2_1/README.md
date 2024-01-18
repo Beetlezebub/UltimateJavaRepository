@@ -14,6 +14,9 @@ Ex:
     All 3 houses were created with the same blueprint (Class), but each has it's own color and location.
     Objects are instances of classes
 
-    The Class allows you to change the color of houses. So if Rob's house changes to yellow, are the other houses affected?
+The Class allows you to change the color of houses. So if Rob's house changes to yellow, are the other houses affected?
     
-    No because each house is separate and keeps it's individual color
+No because each house is separate and keeps it's individual color
+
+If Jack moved into Jill's house, it's Jack's house and Jill's house (2 variables referring to the same object)
+If we make Jill's house orange, then Jack's house is also orange because they're the same object
