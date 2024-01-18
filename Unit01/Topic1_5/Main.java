@@ -15,3 +15,5 @@ public class Main {
   }
   
 }
+
+// javac Unit01/Topic1_5/Main.java; java Unit01.Topic1_5.Main
