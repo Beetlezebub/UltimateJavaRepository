@@ -19,7 +19,7 @@ Sorry about the more complicated syntax for running the code from the command li
 
 # Skill 2.B
 ## Video 1
-main Method controls all code (i.e. pyblic static void main (String[] args))
+main Method controls all code (i.e. public static void main (String[] args))
 System.out generates the console's output
     Can make it print (System.out.print); dispalys whatever in ()
     Can make it print and move cursor (System.out.println); same as other just moves cursor to next line

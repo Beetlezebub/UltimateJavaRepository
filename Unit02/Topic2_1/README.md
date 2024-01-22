@@ -20,3 +20,9 @@ No because each house is separate and keeps it's individual color
 
 If Jack moved into Jill's house, it's Jack's house and Jill's house (2 variables referring to the same object)
 If we make Jill's house orange, then Jack's house is also orange because they're the same object
+
+
+## Using Our Objects
+In the example, only #1 and #2 are correct
+
+In the second set of statements, onlt statements #2 and #3 are correct
