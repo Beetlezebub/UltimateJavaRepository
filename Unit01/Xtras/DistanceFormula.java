@@ -1,5 +1,7 @@
 package Unit01.Xtras;
 
+import java.lang.Math;
+
 public class DistanceFormula {
     public static void main(String[] args) {
         int x1 = Integer.parseInt(args[0]);
@@ -9,9 +11,11 @@ public class DistanceFormula {
 
         int xTotal = ((x2 - x1)*(x2 - x1));
         int yTotal = ((y2 - y1)*(y2 - y1));
-        double xYfin = (xTotal - yTotal);
+        int xYFin = (xTotal + yTotal);
+        double answer = Math.sqrt(xYFin);
+        System.out.println(answer);
+
     }
 }
-
-// javac Unit01\Xtras\DistanceFormula.java; java Unit01.Xtras.DistanceFormula 3 2
+// javac Unit01\Xtras\DistanceFormula.java; java Unit01.Xtras.DistanceFormula 27 93 94 76
 // first half of semicolon separated code compiles the stuff, second half actually provides and plugs in values

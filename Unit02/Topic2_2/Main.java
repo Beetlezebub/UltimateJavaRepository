@@ -6,3 +6,13 @@ public class Main {
   }
 
 }
+//Ex:
+// Car Attributes:
+// make
+// isSports
+// owner
+
+// boringCar
+// make = null
+// isSports = false
+// owner = null
