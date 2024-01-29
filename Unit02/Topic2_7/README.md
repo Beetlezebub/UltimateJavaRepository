@@ -1,2 +1,2 @@
 # 2.7 String Methods
-Already knew about the java quick reference
+Subset is referring to the Java quick reference
