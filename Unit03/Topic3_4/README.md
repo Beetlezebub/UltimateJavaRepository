@@ -1,1 +1,1 @@
-# 3.6 - Equivalent Boolean Expressions
+# 3.4 - Equivalent Boolean Expressions
