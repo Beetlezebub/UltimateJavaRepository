@@ -1,5 +1,7 @@
 package Unit01.Xtras;
 
+import java.lang.Math;
+
 public class RandomStats {
     static void generate() {
          double gen = (double) (Math.random()*2);
