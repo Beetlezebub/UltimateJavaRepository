@@ -7,13 +7,13 @@ public class QuadraticSolver {
         Scanner coeff = new Scanner(System.in);
 
         System.out.println("Enter the first coefficient (number).");
-        double num1 = coeff.nextDouble();
+        double a = coeff.nextDouble();
 
         System.out.println("Enter the second coefficient (number).");
-        double num2 = coeff.nextDouble();
+        double b = coeff.nextDouble();
 
         System.out.println("Enter the last coefficient (number).");
-        double num3 = coeff.nextDouble();
+        double c = coeff.nextDouble();
 
         coeff.close();
 
