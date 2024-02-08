@@ -1,2 +1,2 @@
 # 3.4 - Equivalent Boolean Expressions
-if-else-if statements basically just the same as if else, but when the false condition triggeres there are multiple other conditions before just defaulting to the last one
+if-else-if statements basically just the same as if else, but when the false condition triggers there are multiple other conditions before just defaulting to the last one
