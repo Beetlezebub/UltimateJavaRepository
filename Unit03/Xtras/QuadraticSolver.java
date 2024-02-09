@@ -8,18 +8,18 @@ public class QuadraticSolver {
         Scanner coeff = new Scanner(System.in);
 
         System.out.println("Enter the first coefficient (number).");
-        int a = coeff.nextDouble();
+        double a = coeff.nextDouble();
 
         System.out.println("Enter the second coefficient (number).");
-        int b = coeff.nextDouble();
+        double b = coeff.nextDouble();
 
         System.out.println("Enter the last coefficient (number).");
-        int c = coeff.nextDouble();
+        double c = coeff.nextDouble();
 
         coeff.close();
 
-        int discriminant = Math.sqrt(Math.pow(b, 2) - 4*(a)*(c));
-        System.out.print(discriminant);
+        double discriminant = Math.sqrt(Math.pow(b, 2) - 4*(a)*(c));
+        //int plusQuad = ((b*-1) + 
         //(-b(+-)-/(b)^2-4(a)(c))/2(a)
 
     }
