@@ -26,3 +26,5 @@ public class QuadraticSolver {
 }
 // javac Unit03\Xtras\QuadraticSolver.java
 // java Unit03.Xtras.QuadraticSolver
+
+// This line added from Beetle's laptop :)
