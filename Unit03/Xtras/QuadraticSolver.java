@@ -19,7 +19,13 @@ public class QuadraticSolver {
         coeff.close();
 
         double discriminant = Math.sqrt(Math.pow(b, 2) - 4*(a)*(c));
-        //int plusQuad = ((b*-1) + 
+        
+        if (discriminant % 1 == 0){
+            double plusQuad = ((b*-1) + discriminant);
+            double minusQuad = ((b*-1) + discriminant);
+        }
+        //int plusQuad = ((int)(b*-1) + discriminant)
+        //find way to make it not actually add if not a perfect and stuff
         //(-b(+-)-/(b)^2-4(a)(c))/2(a)
 
     }
