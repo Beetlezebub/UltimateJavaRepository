@@ -38,8 +38,53 @@ While there are digits left in the number
 - Then display final sum when there's no more digits left
 
 ## 4.2 - `for` Loops
+the initialization of for loops only happens once before the 1st boolean expression evaluation 
+
+### Structure
+    for (initialization; oolean expression; update; )
+        //statement one;
+        //statement two;
+        //etc.;
+Very similar to while loop
+
+The first example will display "2 5 8 11 14 17 20"
+The second example will print out 55 because it's adding the number i is -- which increases by 1 each time -- which would add up to 55
+
+
+a `for` loop can be rewritten into an equivalent `while` lopp, and vice versa; they have similar and/or interchangable parts
+
+### for Loops vs. while Loops
+Which is better? No one right answer
+- When statements repear a defined number of times, a for loop may be more appropriate; start and end values can be seen on same line
+- When repeating statements an unknown number of times or based on a complex Boolean expression, a while loop may be more appropriate, because the while statement isolates the Boolean expression
+- If the update to the loop control variable is more complex than a simple increment or decrement (such as complex calculation or series of method calls), then a while loop may be more appropriate, because you can update the loop control variable over a series of statements to make it more readable.
+
+In the example C is wrong
+
+
+In the first example, A, segment 1 and 2 produce the same output, is correct
+In the second example, you should set the initialization to number = 0, and the loop control variable to number <= 10 or number < 11
 
 ## 4.3 - Developing Algorithms Using Strings
+### Verify that a String Contains a Substring
+Given a String value, can we confirm that a particular substring exists within that String?
+What tools/methods in Java do we have to complete this task?
+- String.substring method: Retrieves a particular portion of a String
+- String .equals method: Compares the content of 2 Strings
+- String .length method: Returns the length of a String
+- for loop: Allows us to repeat a task multiple times using a loop control variable
+
+What is the algorithm?
+- Given 2 Strings: word and sub
+- Starting at beginning of word...
+- Check correctly sized portion of word to see if its equivalent to sub
+- If it is, keep track that we found it
+- (If not) Shift word down one character to prepare to compare next portion
+Repeat these steps while thare are still portions of word left to check
+Then inform user whether or not you found it
+
+
+// h
 
 ## 4.4 - Nested Iteration
 
