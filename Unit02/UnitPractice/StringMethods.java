@@ -3,7 +3,8 @@ package Unit02.UnitPractice;
 public class StringMethods {
 
     public static String helloName(String name) {
-        return "";
+        System.out.println("Hello " + name + "!");
+        return ("Hello " + name + "!");
     }
 
     public static String firstHalf(String str) {
@@ -55,6 +56,6 @@ public class StringMethods {
     public static void main(String[] args) {
         // You can test your methods for specific inputs here. For example:
         // System.out.println("helloName(\"Bella\") -> " + helloName("Bella"));
-        middleTwo("string");
+        helloName("string");
     }
 }
