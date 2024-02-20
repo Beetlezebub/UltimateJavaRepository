@@ -61,7 +61,7 @@ These exercises are from [CodingBat](https://codingbat.com/java/String-2). Solve
 
    ```
 
-1. [`prefixAgain`](https://codingbat.com/prob/p136417)
+1. [`prefixAgain`](https://codingbat.co-m/prob/p136417)
 
    Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string appear somewhere else in the string?
 
