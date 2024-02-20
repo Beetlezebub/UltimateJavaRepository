@@ -7,3 +7,8 @@ target
 pom.xml
 replit.nix
 *.class
+<<<<<<< HEAD
+=======
+.DS_Store
+Scratch.java
+>>>>>>> 1994328a476559f8ece637e8d5f869b58a577f68
