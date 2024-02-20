@@ -148,20 +148,28 @@ public class StringLoops {
     }
 
     public static String plusOut(String str, String word) {
-        String newStr = "";
-        for (int i = 0; i <= str.length(); i++){
-            if (!str.substring(i, i + str.length()).equals(str)){
-                newStr += "+";
-            } else if (!str.substring(i, i + str.length()).equals(str)){
-                newStr += str.substring(i, i + 1);
-                newStr += str.substring(i + 1, i + 2);
-            }
+        String newStr = ("");
+        int i = 0;
+        while (i <= str.length() - word.length()){
+          if (str.substring(i, i + word.length()).equals(word)){
+            newStr = newStr + word;
+            i = i + word.length();
+          } else{
+            newStr = newStr + "+";
+            i++;
+          }
         }
-        System.out.println(newStr);
         return newStr;
     }
 
     public static boolean catDog(String str) {
+        int catCount = 0;
+        int dogCount = 0;
+        for (int i = 0; i <= str.length(); i++){
+            if (str.substring(i, i + 4).equals("cat")){
+                //h
+            }
+        }
         return false;
     }
 
