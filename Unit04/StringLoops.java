@@ -93,15 +93,22 @@ public class StringLoops {
 
     public static boolean sameStarChar(String str) {
         boolean check = false;
-        for (int i = 0; i <= str.length(); i++){
-            if ((i > 0) && (i < str.length())){
-                if (str.substring(i, i + 1).equals("*")){
-                    if (str.substring(i - 2, i - 1).equals(str.substring(i + 1, i + 2))){
-                        check = true;
-                    }
+        int i = 0;
+        while (i <= str.length() - 2){    
+            if (!(str.substring(i, i + 1).equals("*"))){
+                // nothing
+            } else if (str.substring(i, i + 1).equals("*")){
+                String char1 = (str.substring(i - 1, i));
+                String char2 = (str.substring(i + 1, i + 2));
+                if (char1.equals(char2)){
+                    check = true;
+                } else{
+                    check = false;
                 }
             }
+            i++;
         }
+        System.out.println(check);
         return check;
     }
     //|| lowb.substring(i, i + lowa.length()).equals(lowa)
@@ -127,16 +134,16 @@ public class StringLoops {
         String lowa = a.toLowerCase();
         String lowb = b.toLowerCase();
         if (lowa.length() > lowb.length()){
-          if (lowa.substring((lowa.length() - lowb.length()), lowa.length()).equals(lowb)){
-            check = true;
-          }
+            if (lowa.substring((lowa.length() - lowb.length()), lowa.length()).equals(lowb)){
+                check = true;
+            }
         } else if (lowb.length() > lowa.length()){
             if (lowb.substring((lowb.length() - lowa.length()), lowb.length()).equals(lowa)){
-              check = true;
+                check = true;
             }
         } else if (lowa.length() == lowb.length()){
             if (lowa.substring((lowa.length() - lowb.length()), lowa.length()).equals(lowb) || lowb.substring((lowb.length() - lowa.length()), lowb.length()).equals(lowa)){
-              check = true;
+                check = true;
             }
         }
         System.out.println(check);
@@ -165,12 +172,20 @@ public class StringLoops {
     public static boolean catDog(String str) {
         int catCount = 0;
         int dogCount = 0;
-        for (int i = 0; i <= str.length(); i++){
-            if (str.substring(i, i + 4).equals("cat")){
-                //h
+        for (int i = 0; i <= str.length() - 3; i++){
+            if (str.substring(i, i + 3).equals("cat")){
+                catCount = catCount + 1;
+            } else if (str.substring(i, i + 3).equals("dog")){
+                dogCount = dogCount + 1;
             }
         }
-        return false;
+        if (catCount == dogCount) {
+            System.out.println(true);
+            return true;
+        } else {
+            System.out.println(false);
+            return false;
+        }
     }
 
     public static String mixString(String a, String b) {
@@ -184,6 +199,6 @@ public class StringLoops {
     public static void main(String[] args) {
         // You can test your methods for specific inputs here. For example:
         // System.out.println("helloName(\"Bella\") -> " + helloName("Bella"));
-        prefixAgain("abXYabc", 1);
+        sameStarChar("xy*yzz");
     }
 }
