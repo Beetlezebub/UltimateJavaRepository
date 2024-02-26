@@ -92,30 +92,52 @@ public class StringLoops {
     }
 
     public static boolean sameStarChar(String str) {
-        boolean check = false;
+        boolean check = true;
         int i = 0;
         while (i <= str.length() - 2){    
-            if (!(str.substring(i, i + 1).equals("*"))){
-                // nothing
-            } else if (str.substring(i, i + 1).equals("*")){
-                String char1 = (str.substring(i - 1, i));
-                String char2 = (str.substring(i + 1, i + 2));
-                if (char1.equals(char2)){
-                    check = true;
-                } else{
-                    check = false;
+            if (i > 0){
+                if (!(str.substring(i, i + 1).equals("*"))){
+                    // nothing
+                } else if (str.substring(i, i + 1).equals("*")){
+                    String char1 = (str.substring(i - 1, i));
+                    String char2 = (str.substring(i + 1, i + 2));
+                    if (char1.equals(char2)){
+                        check = true;
+                    } else{
+                        check = false;
+                    }
                 }
+            } else{
+                //nothing
             }
             i++;
         }
         System.out.println(check);
         return check;
     }
-    //|| lowb.substring(i, i + lowa.length()).equals(lowa)
-    // || i <= b.length() - a.length(); i++
 
     public static String starOut(String str) {
-        return "";
+        String save = ("");
+        String range = ("");
+        for (int i = 0; i <= str.length() - 2; i++){
+            if (str.substring(i, i + 1).equals("*")){
+                if (i > 0 && i <= str.length() - 2){
+                    range = str.substring(i - 1, i + 2);
+                    save += str.replace(range, "");
+                } else if (i == 0){
+                    range = str.substring(i, i + 2);
+                    save += str.replace(range, "");
+                } else if (i == str.length() - 1){
+                    range = str.substring(i - 1, i + 1);
+                    save += str.replace(range, "");
+                } else if (i == str.length()){
+                    range = str.substring(i - 1, i + 1);
+                    save += str.replace(range, "");
+                }
+            }
+        }
+        System.out.println(save);
+        return save;
     }
 
     public static int countHi(String str) {
@@ -151,7 +173,22 @@ public class StringLoops {
     }
 
     public static boolean xyBalance(String str) {
-        return false;
+        int xCount = 0;
+        for (int i = 0; i <= str.length() - 1; i++){
+            if (str.substring(i, i + 1).equals("x")){
+                xCount += 1; 
+            }
+            if (str.substring(i, i + 1).equals("y")){
+                xCount -= xCount;
+            }
+        }
+        if (xCount > 0){
+            System.out.println(false);
+            return false;
+        } else{
+            System.out.println(true);
+            return true;
+        }
     }
 
     public static String plusOut(String str, String word) {
@@ -189,16 +226,41 @@ public class StringLoops {
     }
 
     public static String mixString(String a, String b) {
-        return "";
+        String combo = ("");
+        int combLen = (a.length() + b.length());
+        int i = 0;
+        while (i <= combLen){
+            if (i <= a.length() - 1) {
+                combo += a.substring(i, i + 1);
+            }
+            if (i <= b.length() - 1){
+                combo += b.substring(i, i + 1);
+            }  
+            i++;
+        }
+        System.out.println(combo);
+        return combo;
     }
 
     public static String repeatSeparator(String word, String sep, int count) {
-        return "";
+        String finCom = ("");
+        for (int i = 0; i < count; i++){
+            finCom += word;
+            if (i < count - 1){
+                finCom += sep;
+            }
+        }
+        System.out.println(finCom);
+        return finCom;
     }
 
     public static void main(String[] args) {
         // You can test your methods for specific inputs here. For example:
         // System.out.println("helloName(\"Bella\") -> " + helloName("Bella"));
-        sameStarChar("xy*yzz");
+        starOut("ab*cd");
+        starOut("sm*eilly");
+        starOut("abcd*ef");
+        starOut("abcde*f");
+        starOut("abcdef*");
     }
 }
