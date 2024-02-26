@@ -69,9 +69,9 @@ In the second example, you should set the initialization to number = 0, and the 
 ### Verify that a String Contains a Substring
 Given a String value, can we confirm that a particular substring exists within that String?
 What tools/methods in Java do we have to complete this task?
-- String.substring method: Retrieves a particular portion of a String
-- String .equals method: Compares the content of 2 Strings
-- String .length method: Returns the length of a String
+- String `.substring` method: Retrieves a particular portion of a String
+- String `.equals` method: Compares the content of 2 Strings
+- String `.length` method: Returns the length of a String
 - for loop: Allows us to repeat a task multiple times using a loop control variable
 
 What is the algorithm?
@@ -84,7 +84,19 @@ Repeat these steps while thare are still portions of word left to check
 Then inform user whether or not you found it
 
 
-// h
+### Counting the number of vowels in a string
+Given a String value, how many vowels exist within the string?
+(same methods to work with as example in last one)
+
+What is the algorithm?
+- Given a `String: word`
+- Starting at one end of `word`...
+- Check each letter of `word` to see if it is an "a"... Count every "a"
+- Repeat for every vowel
+- Sum all the counts
+
+Or...
+- Set the variable to check if it's "a", "e", "i", "o", or "u", and add to the count if it is
 
 ## 4.4 - Nested Iteration
 
