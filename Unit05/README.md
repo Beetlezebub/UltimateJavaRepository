@@ -133,10 +133,27 @@ Static variables belong to the class, with all objects of a class sharing a sing
 Static variables can be designated as either public or private and are designated with the static keyword
 Static variables are used with the class name and the dot operator, since they are associated with the class, not objects of a class
 
-
-
 ## 5.8 - Scope and Access
+You can declare local variables in the body of constructors and methods which may be used within the constructor ot method and can't be declared to be public or private
+When there is a local variable with the same name as an instance variable, the variable name will refer to the local variable instead of the instance
+Through method decompisition, a programmer breaks down a large problem into smaller subproblems by creating methods to solve each individual subproblem
 
 ## 5.9 - `this` Keyword
+Within a non-static method or constructor, the keyword `this` is a reference to the current object -- the object whose method or constructor is being called
+The keyword `this` cane be used to pass the current object as an actual parameter in a method call
+
+(on local vs instance slide `this.` is needed and used to clarify it's referring to the local variable not the instance variable)
 
 ## 5.10 - Ethical and Social Implications of Computing Systems
+### Computer Ethics
+- Topic not tested on AP Exam, yet is one of the most important topics to consider in our use of computers
+- Golden Rule
+- When you're a computer scientist in a professional capacity there professional organizations you're expected to join; here's 3 hi-lighted:
+    - Computer Professionals for Social Responsibility
+        - https://www.cpsr.org/issues/ethics/cei
+    - Association for Computing Machinery
+        - https://ethics.amc.org/code-of-ethics/
+    - Institute of Electrical and Electronics Engineers
+        - https://www.ieee.org/about/corporate/governance/p7-8.html
+
+### Copyright
