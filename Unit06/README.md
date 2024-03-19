@@ -40,5 +40,6 @@ A for loop can also be used to access only some of the elements in an array so c
 Do <= can lead to an out of bounds error since, for example, it would include 5 when the listlength is 5, but there is no actual index 5
 
 ## 6.3 - Enhanced for Loop for Arrays
+The enhanced for loop is also called a for-each loop
 
 ## 6.4 - Developing Algorithms Using Arrays
