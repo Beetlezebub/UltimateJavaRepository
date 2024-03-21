@@ -47,16 +47,34 @@ double                       Double
 int                          Integer
 
 ## 7.2 - `ArrayList` Methods
-- `int size()` -- Returns the number of elements in the list
-- `boolean add(E obj)` -- Appends obj to the end of list; returns true
-- `void add(int index, E obj)` -- Inserts `obj` at position `index` (0 <= index <= size), moving elements at position `index` and higher to the right (adds 1 to their indicies) and adds 1 to size
-- `E get(int index)` -- Returns the element at position `index` in the list
-- `E set(int index, E obj)` -- Replaces the element at position `index` with `obj`; returns the element formerly at position `index`
-- `E remove(int index)` -- Removes element from position index, moving elements at position `index + 1` and higher to the left (subtracts 1 from their indicies) and subtracts 1 from size; returns the element formerly at position `index`
+- `int .size()` -- Returns the number of elements in the list
+- `boolean .add(E obj)` -- Appends obj to the end of list; returns true
+- `void .add(int index, E obj)` -- Inserts `obj` at position `index` (0 <= index <= size), moving elements at position `index` and higher to the right (adds 1 to their indicies) and adds 1 to size
+- `E .get(int index)` -- Returns the element at position `index` in the list
+- `E .set(int index, E obj)` -- Replaces the element at position `index` with `obj`; returns the element formerly at position `index`
+- `E .remove(int index)` -- Removes element from position index, moving elements at position `index + 1` and higher to the left (subtracts 1 from their indicies) and subtracts 1 from size; returns the element formerly at position `index`
+
+To add objects to an ArrayList, the objects must be the same data type used to instantiate the ArrayList
+
+
+### Passing an ArrayList as a Method Parameter
+ArrayList is a reference object when passed as a parameter in a method, they are passed as references to their addresses, not copies of their value
+When a method updates elements of a passed ArrayList, its elements are updated automatically
+
+In the 2nd example in video 2, even though the main method is passing a Boolean ArrayList, the complier warns that myMethod1 might not be safe. To prevent these issues, specify the data type of elements stored in ArrayList
+In the 3rd example, is specifies the ArrayList data type in the header, and the code gives a much more detailed explanation of the problem and why it won't work
+When you specify the data type of the elements stored in the ArrayList, the compiler is more helpful in describing the errors.
+
+### Returning an ArrayList from a Method
+In order to return an Arraylist, it is preferred that you specify the data type of the elements that the ArrayList stores
+
+
+h
 
 ## 7.3 - Traversing `ArrayList`s
 
 ## 7.4 - Developing Algorithms Using `ArrayList`s
+Notes basically just on the coding file
 
 ## 7.5 - Searching
 
