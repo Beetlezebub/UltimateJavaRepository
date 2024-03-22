@@ -72,6 +72,11 @@ In order to return an Arraylist, it is preferred that you specify the data type 
 h
 
 ## 7.3 - Traversing `ArrayList`s
+Iteration Statments can be used to access all the elements in an ArrayList (same as with Arrays)
+Deleting elements during traversal of an ArrayList requires using special techniques to avoid skipping elements (also considered traversing an ArrayList)
+
+
+h
 
 ## 7.4 - Developing Algorithms Using `ArrayList`s
 Notes basically just on the coding file
