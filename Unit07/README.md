@@ -83,7 +83,41 @@ Indexes are not explicitly used and copies of the current element are made at ea
 Notes basically just on the coding file
 
 ## 7.5 - Searching
+The process of searching incorporates control structures we've used before: iteration and selection aka a loop with an if inside
+
+Linear searching fits a standard for loop. We need to specify each element one at a time, and do not need to track the index after execution.
+Inside the for loop we retrieve the value from the structure at the specified index and compare it to the searched value. If it matches we return the index, if not we keep looking.
+
+
+### Searching Linear Structures
+Linear search algorithms are BEST used when we don't have any idea about the order of the data and so we need to look at each element to determine if what we are looking for is in fact inside the array or ArrayList
+When searching, we need to remember that different data types require different comparisons.
+- When looking at **int** values, the == operator is the tool to use
+- When searching for a **double** value, we need to make sure the value is close enough by doing some math
+- **Object** instances should always use the `.equals(otherThing)` method to check for a match
+
+When searching a linear structure we need to send it the structure and what we're looking for as parameters
+Usually the search method will return the index of the found item, or -1 if it's not found. We can also simply return a boolean value if the desired item is located anywhere inside the structure.
+A standard for loop with an if block is all we need to search any linear structure. If the item mathes the conditions, it should return the index immediately so we don't need to continue executing the method. If the value is not found after completing the loop it can return -1 indicating there is no index with th desired value.
+
+
+### Why does order sometimes matter
+When searching for a value to remove from a list, if we search forward we have to make sure to adjust the loop control variable, or we might skip what we're looking for when removing
+- Starting from the back of the list is best because if you go from the front and remove something, it may skip automatically skip the next value since the next value would shift to the value you just removed, even if you need to remove that value.
+- Starting from the back makes it so a value you already checked moves to the place of the item you just removed, making sure you don't skip anything
+
+### Can we use an enhanced for loop to search?
+Yes. As long as we're only checking for existence a for-each loop will work fine since they don't track the index or position in the structure.
+
+### Removal
+What logically needs to be done if removing in a forward loop?
+Inside the block, but after removing the value at the index set the loop control vatiable to be itself minus 1
 
 ## 7.6 - Sorting
+### Selection Sort
+One of easiest sorts to demonstrate. It identifies either the min or max of the compared values and iterates over the structure checking if the item stored at the index matches that condition. If so, it will swap the value stored at that index and continue. The implemnetation uses a helper method to perform the swap operation since variables can only hold one variable at a time.
+
+Can't used an enhanced for loop for this because the selction sort algorithm needs to know the index of the items it's working with
+How does the swap occur? A 3rd variable is needed to temporarily hold on to the swapped value from the array since variable can only hold one thing at a time
 
 ## 7.7 - Ethical Issues Around Data Collection
