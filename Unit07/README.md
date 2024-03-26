@@ -76,7 +76,8 @@ Iteration Statments can be used to access all the elements in an ArrayList (same
 Deleting elements during traversal of an ArrayList requires using special techniques to avoid skipping elements (also considered traversing an ArrayList)
 
 
-h
+For-each loop, by design, iterates from first to last order and will visit each element of the ArrayList
+Indexes are not explicitly used and copies of the current element are made at each iteration
 
 ## 7.4 - Developing Algorithms Using `ArrayList`s
 Notes basically just on the coding file
