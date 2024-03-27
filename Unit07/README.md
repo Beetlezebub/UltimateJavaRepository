@@ -102,7 +102,9 @@ A standard for loop with an if block is all we need to search any linear structu
 
 
 ### Why does order sometimes matter
-When searching for a value to remove from a list, if we search forward we have to make sure to adjust the loop control variable, or we might skip what we're looking for when removing
+When searching for a value 
+
+to remove from a list, if we search forward we have to make sure to adjust the loop control variable, or we might skip what we're looking for when removing
 - Starting from the back of the list is best because if you go from the front and remove something, it may skip automatically skip the next value since the next value would shift to the value you just removed, even if you need to remove that value.
 - Starting from the back makes it so a value you already checked moves to the place of the item you just removed, making sure you don't skip anything
 
