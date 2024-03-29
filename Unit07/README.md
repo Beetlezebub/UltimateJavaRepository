@@ -122,4 +122,17 @@ One of easiest sorts to demonstrate. It identifies either the min or max of the 
 Can't used an enhanced for loop for this because the selction sort algorithm needs to know the index of the items it's working with
 How does the swap occur? A 3rd variable is needed to temporarily hold on to the swapped value from the array since variable can only hold one thing at a time
 
+
+### Insertion Sort
+The insertion sort is characterized by building a sorted structure as it proceeds. It inserts each value it finds at the appropriate location in the data structure. This is often accomplished by using a while loop as the inner loop
+
+Why use a while loop? As soon as the condition is failed a while loop won't execute again, if a for loop was chosen a much more complex middle section of the for loop header is required.
+Why is the insertion sort better than selection sort? The structure is sorted up to the current value of execution.
+
+
+### Counting Steps
+When looking at algorithms main comparisons are how efficent they are (how fast they execute)
+How often is each line executed? Simple blocks only execute once, while the execution count is multiplied when inside a nested loop.
+Selection and insertion sorting algorithms are essentially quadratic functions since a loop over an entire array or ArrayList means that the inner and outer loops execute as many times as there areelements to compare. Even loops optimized to not execute ALL elements count as functions.
+
 ## 7.7 - Ethical Issues Around Data Collection
