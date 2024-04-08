@@ -74,7 +74,7 @@ A postcondition is a condition that must always be true after the execution of a
 
 ## 5.4 - Accessor Methods
 Accessor methods allow other objects to obtain the value of instance variables or `static` variables
-A non-void method returns a sing;e value. Its header includes the `return` type in place of the keyword `void`
+A non-void method returns a single value. Its header includes the `return` type in place of the keyword `void`
 
 ### Accessor Methods
 Allows safe access to instance variables
