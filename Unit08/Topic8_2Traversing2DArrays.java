@@ -2,7 +2,7 @@ package Unit08;
 
 public class Topic8_2Traversing2DArrays {
     private static boolean sort(String[][] values, String targ) {
-        for (int r = 0; r <= values.length; r++)
+        for (int r = 0; r < values.length; r++)
         {
             for (int c = 0; c < values[0].length; c++)
             {
