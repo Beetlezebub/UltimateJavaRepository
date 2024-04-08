@@ -23,9 +23,6 @@
 When we know the values for the array at the time of creation, an intializer list can be helpful
     `double [] grades = {70.5, 88.2, 93.7, 98.7}`
 
-
-//come back and take notes on the last 6.1 video
-
 ## 6.2 - Traversing Arrays
 Iteration statements can be used to access all the elements in an array (traversing an array)
 Traversing an array with an indexed for loop or while loop require elements to be accessed using their indicies
