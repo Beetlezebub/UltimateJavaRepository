@@ -40,3 +40,20 @@ Do <= can lead to an out of bounds error since, for example, it would include 5 
 The enhanced for loop is also called a for-each loop
 
 ## 6.4 - Developing Algorithms Using Arrays
+To find the minimum or maximum value of an array we need a method that can take a parameter of an array of primitive values (int or double) and return the item at the appropriate extreme
+Inside the method, a local variable is needed to store the current max or min value to compare against.
+Youy can either use a standard for loop or an enhanced for loop to determine the max or min.
+Inside the for loop, compare the current value against the local variable and assign it to the temporary variable.
+
+
+In order to calculate the average  of objects in arrays, we need a method that can take a parameter of an array of Objects and calculate and return the average value.
+Inside the method, a local double variable is needed to store the accumulated values. Then we use a for loop to traverse the array and add the current total to the variable, and then divide by the number of items stored.
+
+
+To shift the contents of an array to the right, we need to know how much we're shifting by, and it'll need to be an int.
+In order to move the contents  we need to make an empty array of the same size and then iterate over the original array and properly copy the values to the adjusted index in the new array.
+Then we need to assign the new array back to the original variable.
+We must use a standard for loop, not an enhanced for loop since this algorithm is dependent on the index of each value in the array.
+
+To shift to te left, we use nested for loops. The outer loop will execute the numbe of of times we are shifting. The inner loop will first copy the value stored in the first index, then move all contents one spot left. Finally, copy the temp variable back to the end of the array.
+Also have to use a standard for loop for the same reasons.
