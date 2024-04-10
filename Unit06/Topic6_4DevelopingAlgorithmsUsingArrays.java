@@ -30,13 +30,36 @@ public class Topic6_4DevelopingAlgorithmsUsingArrays {
         return avg;
     }
 
-    private static int shiftR(int[] values){
+    private static void shiftR(int[] values, int shift){
         int [] shifted = new int [values.length];
-        return 0;
+        for (int i = 0; i < values.length; i++){
+            shifted [Math.abs((i + shift)) % values.length] = values[i];
+        }
+        values = shifted;
+        for (int num : values){
+            System.out.println(num);
+        }
+    }
+
+    private static void shiftL(int[] value, int shift){
+        int [] shifted = new int [value.length];
+        for (int count = 0; count < shift; count++){
+            int temp = value[0];
+            for (int i = 0; i < value.length; i++){
+                value[i] = value[i+1];
+            }
+            value[value.length - 1] = temp;
+        }
+        for (int num : value){
+            System.out.println(num);
+        }
     }
     
     public static void main(String[] args) {
-        double [] a = {10.0, 20.0, 30.0, 40.0};
-        System.out.println(findAvg(a));
+        // double [] a = {10.0, 20.0, 30.0, 40.0};
+        // System.out.println(findAvg(a));
+        int [] b = {1, 2, 3, 4, 5};
+        shiftR(b, 8);
+
     }
 }
