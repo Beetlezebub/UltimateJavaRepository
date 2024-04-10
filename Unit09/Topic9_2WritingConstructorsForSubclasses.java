@@ -5,3 +5,34 @@ public class Topic9_2WritingConstructorsForSubclasses {
 
     }
 }
+
+public class Perfomer {
+    private String name;
+    private int age;
+    public Perfomer() {
+        name = "The Performer";
+        age = 16;
+    }
+    public Performer(String n, int a) {
+        name = n;
+        age = a;
+    }
+}
+
+public class Musician extends Performer {
+    private String instrument;
+    public Musician() {
+        instrument = "Piano";
+    }
+    public Musician(String inst) {
+        instrument = inst;
+    }
+}
+// [✓]
+// [X]
+//Performer wynton = new Performer(); [✓]
+// Musician branford = new Musician(); [✓]
+//Performer wynton = new Performer("Wynton", 19); [✓]
+//Musician branford = new Musician("Branford", 20); [X]
+//Musician branford = new Musician("Saxophone"); [✓]
+//Performer wynton = new Performer("Trumpet"); [X]
