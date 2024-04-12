@@ -111,6 +111,8 @@ At run time, the method in the actual type is executed for a non-static method c
 [come back and dictate from notebook]
 
 
-
+Utilize Object class through inheritance
+At compile time, methods in or inherited by the declared type determine the correctness of a non-static method call
+At run-time, the method in the actual type is executed for a non-static method call
 
 ## 9.7 - Object Superclass
