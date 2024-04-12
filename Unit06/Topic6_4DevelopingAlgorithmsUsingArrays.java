@@ -42,7 +42,7 @@ public class Topic6_4DevelopingAlgorithmsUsingArrays {
     }
 
     private static void shiftL(int[] value, int shift){
-        int [] shifted = new int [value.length];
+        // int [] shifted = new int [value.length];
         for (int count = 0; count < shift; count++){
             int temp = value[0];
             for (int i = 0; i < value.length; i++){
@@ -60,6 +60,7 @@ public class Topic6_4DevelopingAlgorithmsUsingArrays {
         // System.out.println(findAvg(a));
         int [] b = {1, 2, 3, 4, 5};
         shiftR(b, 8);
+        shiftL(b, 8);
 
     }
 }

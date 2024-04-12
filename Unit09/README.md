@@ -69,9 +69,48 @@ What are our options when we extend a superclass?
 Comedian would inheritthe public methods `getName()`, `practice()`, and `perform()`
 
 ## 9.4 - super Keyword
+Already know most of this in the first video because we basically already covered it in in the other units
+
+`super.[MethodName]` lets you call a method from the parent class
+When calling a super class method you've done an override on, super doesn't need to be the first line of the method's code
 
 ## 9.5 - Creating References Using Inheritance Hierarchies
+If S is a subclass of T, then assigning an object of type S to a reference of type T facilitates polymorphism
+If S is a subclass of T, then a reference of type T can be used to refer to an object of type T or S
+Declaring references of type T when S is a subclass of T is useful in the following declarations:
+    - Formal method parameters
+    - arrays -- `T[] var` or `ArrayList<T> var`
+
+Can create a variable and have it refer to an object of a subclass extending from it (has to have the parent class on the left and the subclass on the right)
+
+### Power 
+Why declare a variable using a superclass if we plan to store a reference to a subclass object?
+    - A collection (array or ArrayList) needs to be declared as a datatype
+    - We store **all** of our writng utensils in our pencil case
+        Ex:
+            `WritingUtensil[] pencilCase = new WritingUtensil[3];`
+            `pencilCase [0] = new Pen();`
+            `pencilCase[1] = new GelPen();`
+            `pencilCase[2] = new Marker();`
+    - This in turn, supports polymorphism. Each writing utensil likely displays writing differently. Let's say the behavior is implemented through a method `public void write(String text)` in the WritingUtensil Class, which is overridden appropriately in each subclass.
+        Ex:
+            `for(WritingUtensil wu : PencilCase){`
+            `    wu.write("Hello.");`
+            `}`
+        Asks each individual object to write hello
 
 ## 9.6 - Polymorphism
+When calling methods in an inheritance relationship, you can utilize the Onbject class through inheritance
+At compile time, methods in or inherited by the declared type determine the correctness of non-static method call
+At run time, the method in the actual type is executed for a non-static method call
+
+- A reference variable is polymorphic when it can refer to objects from different classes at different points in code
+    - A reference variable cna store a reference to its declared class or to any subclass of its declared class'
+- A method is considered polymorphic when it is overridden in at least one subclass
+- Polymorphism is the act of executing an overridden non-static method from the correct class at runtime based on the actual object type
+[come back and dictate from notebook]
+
+
+
 
 ## 9.7 - Object Superclass
