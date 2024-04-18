@@ -11,7 +11,7 @@ public class GradientIllusion extends JPanel {
         
         //Draw the rectangle and fill
         g.fillRect(43, 103, 409, 255);
-
+        //h
 
     }
 
