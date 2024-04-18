@@ -99,6 +99,8 @@ Why declare a variable using a superclass if we plan to store a reference to a s
             `}`
         Asks each individual object to write hello
 
+A parent class can't be used as a reference for one of it's subclasses
+
 ## 9.6 - Polymorphism
 When calling methods in an inheritance relationship, you can utilize the Onbject class through inheritance
 At compile time, methods in or inherited by the declared type determine the correctness of non-static method call
@@ -116,3 +118,8 @@ At compile time, methods in or inherited by the declared type determine the corr
 At run-time, the method in the actual type is executed for a non-static method call
 
 ## 9.7 - Object Superclass
+The `Object` class is the superclass of all other classes in Java; when a class does not explicitly extend another class, then it implicitly extends `Object`
+The Object class is part of the `java.lang` package; means an import staement ins't necessary to use Object
+Subclasses of Objects often override the `equals` and `toString` methods with class specific implementations
+
+When an object is passed as a parameter to the print() method or println() method, the object's toString() method is implicitly called
